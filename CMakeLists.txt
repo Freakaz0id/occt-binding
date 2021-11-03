@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.7)
 
 project(pybind_example)
 
@@ -21,6 +21,7 @@ target_include_directories(
     PRIVATE ${OCCT_INCLUDE_DIR}
 )
 
+#link_directories(
 target_link_directories(
     "spark" 
     PRIVATE ${OCCT_LIB_DIR}
